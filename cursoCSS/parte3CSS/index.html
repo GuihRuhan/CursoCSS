@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Page</title>
+</head>
+<body>
+    <div class="content">
+        <div class="flex-div">
+            <div class="name-content">
+                <h1 class="logo">Facebook</h1>
+                <p>Connect with friends and the world around yu on Facebook</p>
+            </div>
+            <form>
+                <input type="text" placeholder="Email or Phone Number" required>
+                <input type="password" placeholder="password"required>
+                <button class="login"> Log In</button>
+                <p class="text-center">
+                    <a href="#"> forgot password ?</a>
+                </p>
+                <button class="create-account">Create New Account</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+body{
+    font-family: "Poppins", sans-serif;
+    background: #f2f4f7;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.flex-div {
+    display: flex;
+}
+.name-content {
+    margin-right: 7%;
+}
+.name-content .logo {
+    font-size: 70px;
+    color: #1877f2;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 2rem;
+    width: 530px;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 3px lightgrey;
+}
+form a {
+    text-decoration: none;
+    color: #1877f2;
+}
+form input {
+    outline: none;
+    color: gray;
+    padding: 2% 3%;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+form input:focus {
+    border: 1.8px solid #1877f2;
+}
+.text-center{
+    text-align: center;
+}
+form .login{
+    border: none;
+    background: #1877f2;
+    padding: 0.8rem 1rem;
+    border-radius: 0.4rem;
+    font-size: 1.1rem;
+    color: #fff;
+}
+font .create-account {
+    border: none;
+    background: #06b909;
+    padding: 0.8rem 1rem;
+    border-radius: 0.4rem;
+    font-size: 1.1rem;
+    color: #fff;
+    width: 75%;
+    margin: 0 auto;
+}
+form .login:hover {
+    background: #588ed4;
+    cursor: pointer;
+}
+form .create-account:hover {
+    background: #06b909;
+    cursor: pointer;
+}
+
+@media(max-width:980px){
+    html{
+        font-size: 60%;
+    }
+    .name-content {
+        margin: 0;
+        text-align: center;
+
+    }
+    .name-content p {
+        font-size: 2rem;
+    }
+    form {
+        width: 90%;
+        /*background-color: #06b909;*/
+    }
+    .flex-div{
+        display: flex;
+        flex-direction: column;
+    }   
+    form input {
+        margin-bottom: 1.1rem;
+        font-size: 1.5rem;
+    }
+    form .login,
+    form .create-account
+    form a{
+        font-size: 1.6rem;
+    }
+}
+@media(max-width:350px){
+    html {
+        font-size: 70%;
+        
+    }
+    form{
+        /*background-color: rgb(226, 30, 30);*/
+        width: 250px;
+        margin-left: 5%;
+    }
+    form input{
+        font-size: 1.8rem;
+    }
+    form input,
+    form a {
+        font-size: 1.8rem;
+    }
+    .name-content p {
+        font-size: 1.8rem;
+    }
+    .name-content .logo{
+        font-size: 50px;
+        /*background-color: red;*/
+    }
+}
+
+</style>

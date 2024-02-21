@@ -1,0 +1,23 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: antiquewhite;
+}
+
+h1 {
+    color: grey;
+}
+h1:hover {
+    color: blue;
+}
+input:required {
+    color: red;
+}
+input:focus {
+    color: greenyellow;
+}
+#firstName{
+    background-color: aqua;
+}
+.lastname {
+    background-color: chartreuse;
+}
